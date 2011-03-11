@@ -4,14 +4,17 @@ var app = express.createServer();
 exports.app = app;
 
 exports.appPort = process.env.IG_APP_PORT || 3000;
-exports.CLIENT_ID = process.env.IG_CLIENT_ID || 'YOUR+CLIENT+ID';
-exports.CLIENT_SECRET = process.env.IG_CLIENT_SECRET || 'YOUR+CLIENT+SECRET';
+exports.CLIENT_ID = process.env.IG_CLIENT_ID || '081f0a38d31b4d5483c37eb9377365df';
+exports.CLIENT_SECRET = process.env.IG_CLIENT_SECRET || '9f784a27dd0b410f84da85e266d4fd43';
 exports.httpClient = (process.env.IG_USE_INSECURE ? require('http') : require('https'));
 exports.apiHost = process.env.IG_API_HOST || 'api.instagram.com';
 exports.apiPort = process.env.IG_API_PORT || null;
 exports.basePath = process.env.IG_BASE_PATH || '';
-exports.REDIS_PORT = 6486;
-exports.REDIS_HOST = '127.0.0.1';
+exports.REDIS_PORT = 9127;
+exports.REDIS_HOST = 'rmetzler:3679b6508bb1aa02468b5b27110d4729@filefish.redistogo.com';
+// redis://rmetzler:3679b6508bb1aa02468b5b27110d4729@filefish.redistogo.com:9127/
+
+
 
 app.set('view engine', 'jade');
 
