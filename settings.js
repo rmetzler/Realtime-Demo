@@ -10,8 +10,8 @@ exports.httpClient = (process.env.IG_USE_INSECURE ? require('http') : require('h
 exports.apiHost = process.env.IG_API_HOST || 'api.instagram.com';
 exports.apiPort = process.env.IG_API_PORT || null;
 exports.basePath = process.env.IG_BASE_PATH || '';
-exports.REDIS_PORT = 9127;
-exports.REDIS_HOST = 'rmetzler:3679b6508bb1aa02468b5b27110d4729@filefish.redistogo.com';
+exports.REDIS_PORT = 6379; // 9127
+exports.REDIS_HOST = 'localhost';//'rmetzler:3679b6508bb1aa02468b5b27110d4729@filefish.redistogo.com';
 // redis://rmetzler:3679b6508bb1aa02468b5b27110d4729@filefish.redistogo.com:9127/
 
 
